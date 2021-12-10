@@ -1,0 +1,78 @@
+.Board {
+    width: 1050px;
+    height: 900px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 15vh;
+    outline: 4px solid #001193;
+    border-radius: 10px;
+}
+
+.play-indicator1,
+.play-indicator2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -15%;
+    left: 25px;
+    border-radius: 50%;
+    animation: indicator 1s infinite;
+}
+
+@keyframes indicator {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.play-indicator1 {
+    background-color: yellow;
+}
+
+.play-indicator2 {
+    background-color: red;
+}
+
+.play-indicator1:nth-child(2),
+.play-indicator2:nth-child(2) {
+    left: 175px;
+}
+
+.play-indicator1:nth-child(3),
+.play-indicator2:nth-child(3) {
+    left: 325px;
+}
+
+.play-indicator1:nth-child(4),
+.play-indicator2:nth-child(4) {
+    left: 475px;
+}
+
+.play-indicator1:nth-child(5),
+.play-indicator2:nth-child(5) {
+    left: 625px;
+}
+
+.play-indicator1:nth-child(6),
+.play-indicator2:nth-child(6) {
+    left: 775px;
+}
+
+.play-indicator1:nth-child(7),
+.play-indicator2:nth-child(7) {
+    left: 925px;
+}
+
+.row {
+    width: 100%;
+    height: 16.6%;
+}
